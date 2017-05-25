@@ -163,7 +163,7 @@
         var $dd = $(".dd");
         $dd.nestable().delegate('.delBtn', 'click', function () {
             var id = $(this).attr('data-attr');
-            $('.deleteForm').attr('action', '/menu/' + id);
+            $('.deleteForm').attr('action', '/admin/menu/' + id);
             $("#modal-delete").modal();
         });
         $('#nestable-menu').on('click', function(e) {

@@ -13,8 +13,8 @@
 
 
 Auth::routes();
-
-Route::get('/', 'HomeController@index');
 Route::get('/verify/email/{token}', 'EmailController@verify')->name('email.verify');
-
-Route::resource('menu', 'MenuController');
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'HomeController@index')->name('admin.index');
+    Route::resource('menu', 'MenuController');
+});
