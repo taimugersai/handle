@@ -1,0 +1,15 @@
+{
+  "name": "hiToast",
+  "homepage": "https://github.com/hicoldcat/hiToast",
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "dd5c24d899e972bf626f3c17e29c81d1c883caa3"
+  },
+  "_source": "https://github.com/hicoldcat/hiToast.git",
+  "_target": "^0.1.0",
+  "_originalSource": "https://github.com/hicoldcat/hiToast.git",
+  "_direct": true
+}

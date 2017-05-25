@@ -28,9 +28,10 @@
         </div>
         @yield('content')
     </div>
-
+    <div id="hitoast"></div>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="/plugins/hiToast/hitoast.min.js"></script>
     @yield('footer')
     <script>
         $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
