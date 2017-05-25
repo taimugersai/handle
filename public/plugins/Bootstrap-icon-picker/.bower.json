@@ -1,0 +1,15 @@
+{
+  "name": "Bootstrap-icon-picker",
+  "homepage": "https://github.com/tito433/Bootstrap-icon-picker",
+  "version": "3.3.6",
+  "_release": "3.3.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.3.6",
+    "commit": "02506cf50eeea047c5e79be5c82c99abd8b5375a"
+  },
+  "_source": "https://github.com/tito433/Bootstrap-icon-picker.git",
+  "_target": "^3.3.6",
+  "_originalSource": "https://github.com/tito433/Bootstrap-icon-picker.git",
+  "_direct": true
+}

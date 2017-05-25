@@ -178,6 +178,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //视图composer
+        App\Providers\ComposerServiceProvider::class,
         //消息提示
         Laracasts\Flash\FlashServiceProvider::class,
         //邮件服务
@@ -233,5 +235,26 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    /*
+            |---------------------------------------------------------|
+            | SKINS         | skin-blue                               |
+            |               | skin-black                              |
+            |               | skin-purple                             |
+            |               | skin-yellow                             |
+            |               | skin-red                                |
+            |               | skin-green                              |
+            |---------------------------------------------------------|
+             */
+    'skin'    => 'skin-blue',
 
+    /*
+    |---------------------------------------------------------|
+    |LAYOUT OPTIONS | fixed                                   |
+    |               | layout-boxed                            |
+    |               | layout-top-nav                          |
+    |               | sidebar-collapse                        |
+    |               | sidebar-mini                            |
+    |---------------------------------------------------------|
+     */
+    'layout'  => ['sidebar-mini'],
 ];

@@ -16,3 +16,5 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/verify/email/{token}', 'EmailController@verify')->name('email.verify');
+
+Route::resource('menu', 'MenuController');

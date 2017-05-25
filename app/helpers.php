@@ -24,3 +24,24 @@ if(!function_exists('getFirstImg')) {
         }
     }
 }
+
+/**
+ * 判断数组最大维度是多少
+ * @param $arr
+ * @return int
+ */
+if(!function_exists('getMaxDimension')) {
+    function getMaxDimension($arr)
+    {
+        if (!is_array($arr)) {
+            return 0;
+        } else {
+            $max = 0;
+            foreach ($arr as $item) {
+                $t = getMaxDimension($item);
+                if ($t > $max) $max = $t;
+            }
+            return $max + 1;
+        }
+    }
+}
