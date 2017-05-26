@@ -767,7 +767,7 @@ input[type=range]:focus::-ms-fill-upper {
 <template>
 <div class="upload">
     <slot></slot>
-    <div class="image" :style="{'background-image':'url('+file+')'}" v-if="file!=''&&preview"></div>
+    <div class="image" :style="{'background-image':'url('+file+')'}" v-if="file!=''&&preview&&!isMultiple"></div>
     <div class="progress" v-if="percent>0">
         <span :style="{width:percent+'%'}"></span>
         <em class="pa">{{percent}}%</em>

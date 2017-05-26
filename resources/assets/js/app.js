@@ -13,6 +13,7 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 Vue.component('upload-image', require('./components/UploadImage.vue'));
+Vue.component('upload-many-images', require('./components/UploadManyImages.vue'));
 
 const app = new Vue({
     el: '#app'
