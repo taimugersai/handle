@@ -393,13 +393,13 @@ export default {
         },
         // 获取多点触控
         cropTouchData(e){
-            if(e.touches.length<2)return
-            let x1 = e.touches[0].pageX
-            let x2 = e.touches[1].pageX
-            let x3=(x1<=x2 ? (x2-x1)/2+x1 : (x1-x2)/2+x2)
-            let y1 = e.touches[0].pageY - this.scrollbar.scrollTop
-            let y2 = e.touches[1].pageY - this.scrollbar.scrollTop
-            let y3=(y1<=y2 ? (y2-y1)/2+y1 : (y1-y2)/2+y2)
+            if(e.touches.length<2)return;
+            let x1 = e.touches[0].pageX;
+            let x2 = e.touches[1].pageX;
+            let x3=(x1<=x2 ? (x2-x1)/2+x1 : (x1-x2)/2+x2);
+            let y1 = e.touches[0].pageY - this.scrollbar.scrollTop;
+            let y2 = e.touches[1].pageY - this.scrollbar.scrollTop;
+            let y3=(y1<=y2 ? (y2-y1)/2+y1 : (y1-y2)/2+y2);
             return {
                 length: Math.round(Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2))),
                 x: Math.round(x3),
