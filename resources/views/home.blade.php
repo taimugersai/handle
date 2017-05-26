@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('header')
+    <link rel="stylesheet" href="/css/uploadImage.css">
+@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -11,7 +13,11 @@
                     You are logged in!
                 </div>
             </div>
+            <upload-image filename="cover" url="{{ url('/api/upload') }}" ratio="0.6"></upload-image>
         </div>
     </div>
 </div>
+@endsection
+@section('footer')
+
 @endsection

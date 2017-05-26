@@ -1,0 +1,1 @@
+{"version":3,"sources":["uploadImage.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,cAAc;EACd,uBAAuB;EACvB,6BAA6B;CAI9B;;AARD;EAMI,cAAc;CACf","file":"uploadImage.css","sourcesContent":[".upload-image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-repeat: no-repeat;\n  input {\n    display: none;\n  }\n}"]}

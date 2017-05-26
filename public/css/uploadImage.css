@@ -3,7 +3,10 @@
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  input {
-    display: none;
-  }
 }
+
+.upload-image input {
+  display: none;
+}
+
+/*# sourceMappingURL=uploadImage.css.map */
