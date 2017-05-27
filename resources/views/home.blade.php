@@ -11,11 +11,10 @@
 
                 <div class="panel-body">
                     You are logged in!
-                    <upload-image filename="cover" url="{{ url('/api/upload') }}" ratio="0.6"></upload-image>
-
-                    <upload-many-images filename="cover" url="{{ url('/api/upload') }}" ratio="1"></upload-many-images>
                 </div>
             </div>
+            <upload-image filename="cover" url="{{ url('/api/upload') }}" ratio="0.6"></upload-image>
+            <upload-many-images filename="cover" url="{{ url('/api/upload') }}" ratio="1"></upload-many-images>
         </div>
     </div>
 </div>

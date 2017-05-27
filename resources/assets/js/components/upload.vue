@@ -224,9 +224,9 @@ export default {
                         }
                         this.scaleX=-Math.round((this.scaleWidth-this.width)/2);
                         this.scaleY=-Math.round((this.scaleHeight-this.height)/2);
-                 
+
                         this.cropImage=fr.result;
-                        
+
                         // 渲染到canvas
                         this.canvas=document.createElement("canvas");
                         this.canvas.width=this.width;
@@ -272,7 +272,7 @@ export default {
             this.files = newFiles;
         },
         uploadFiles(){
-            if(this.files.length==0)return false
+            if(this.files.length==0)return false;
             for (let i = 0, f; f = this.files[i]; i++) {
                 (file=>{
                     let xhr = new XMLHttpRequest();
@@ -280,7 +280,7 @@ export default {
                         let formData = new FormData();
                         formData.append(this.filename, file);
                         if(this.params!=undefined){
-                            for (let key in this.params)formData.append(key, this.params[key])  
+                            for (let key in this.params)formData.append(key, this.params[key])
                         }
                         xhr.upload.addEventListener("progress",e=>{
                             this.percent=Math.floor(e.loaded/e.total*100);
@@ -342,12 +342,12 @@ export default {
                 }else{
                     this.scaleX= e.pageX - this.beginX;
                     this.scaleY= e.pageY - this.beginY;
-                    
+
                 }
             }else{
                 this.scaleX= e.pageX - this.beginX;
                 this.scaleY= e.pageY - this.beginY;
- 
+
             }
             this.cropLimit()
         },
@@ -418,7 +418,7 @@ export default {
         // 提交裁剪
         cropOK(){
             let data=this.canvas.toDataURL("image/jpeg",this.quality||0.8);
-            //没有设置服务器直接返回base64 
+            //没有设置服务器直接返回base64
             if(this.url==""){
                 this.file=data;
                 this.showCrop=false;
@@ -507,7 +507,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style>
 .upload{
     position: relative;
     width: 100%;
@@ -620,6 +620,7 @@ export default {
 .crop .dialog>input{
     position: absolute;
     bottom:70px;
+    width: 60%;
     left:50%;
     transform: translateX(-50%);
 }
@@ -673,21 +674,21 @@ export default {
 }
 @-webkit-keyframes v-beatStretchDelay{
     50%{
-        -webkit-transform: scale(0.75);          
+        -webkit-transform: scale(0.75);
         opacity: 0.2;
     }
     100%{
-        -webkit-transform: scale(1);         
+        -webkit-transform: scale(1);
         opacity: 1;
     }
 }
 @keyframes v-beatStretchDelay{
     50%{
-        transform: scale(0.75);           
+        transform: scale(0.75);
         opacity: 0.2;
     }
     100%{
-        transform: scale(1);          
+        transform: scale(1);
         opacity: 1;
     }
 }
@@ -714,7 +715,7 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     margin-top: -10px;
     }
- 
+
 input[type=range]::-moz-range-track {
     width: 100%;
     height: 2px;

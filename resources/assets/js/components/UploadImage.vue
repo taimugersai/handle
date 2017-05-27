@@ -2,7 +2,7 @@
     .layout{
         box-sizing: border-box;
     }
-    .upload-image{
+    .upload-cover{
         margin:auto;
         padding:10px;
         background-color: #fff;
@@ -16,7 +16,7 @@
 </style>
 <template>
     <div class="layout">
-        <div class="upload-image" :style="{width:upload.width+'px',height:upload.height+'px'}">
+        <div class="upload-cover" :style="{width:upload.width+'px',height:upload.height+'px'}">
             <upload
                     :header="upload.header"
                     :url="url"
@@ -78,7 +78,7 @@
                             this.upload.file = data.data.path;
                         }
                     }
-                },
+                }
             }
         }
     }
