@@ -11,7 +11,8 @@
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.3.*",
         "laravel/passport": "~1.0",
-        "naux/sendcloud": "^1.1"
+        "naux/sendcloud": "^1.1",
+        "xutl/aliyunmns": "^1.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

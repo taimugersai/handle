@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b2c0e6d7b16e2f4d740a47f8342b2a2",
+    "content-hash": "966b54bb98f08ded3d4274bb992cc545",
     "packages": [
         {
             "name": "bosnadev/repositories",
@@ -2727,6 +2727,46 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "xutl/aliyunmns",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/AliyunMNS.git",
+                "reference": "9eaf37a44ebbe139cb2106e6df6a2dc7f8d42392"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/AliyunMNS/9eaf37a44ebbe139cb2106e6df6a2dc7f8d42392.zip",
+                "reference": "9eaf37a44ebbe139cb2106e6df6a2dc7f8d42392",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AliyunMNS\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "aliyun",
+                    "email": "aliyun@aliyun.com"
+                }
+            ],
+            "description": "aliyunmsn php sdk",
+            "keywords": [
+                "aliyun",
+                "mns"
+            ],
+            "time": "2017-02-20T07:13:04+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
